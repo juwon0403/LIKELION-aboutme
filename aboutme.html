@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>What's my kistch?</title>
+<style>
+* {
+    margin: 0;
+}
+
+div.play{
+    position: absolute;
+    background-image: url("images/white.jpg");
+    color: #232323;
+    font-family: Arial Black;
+    padding: 10px;
+    top: 0px;
+    right: 30px;
+    width: 300px;
+    box-shadow: 0px 0px 10px white;
+    border-radius: 0px 0px 30px 30px;
+}
+
+div.menu {
+    position:fixed;
+    background-image: url("images/pink.jpg");
+    color: #232323;
+    font-family: Arial Black;
+    padding: 10px;
+    top: 100px;
+    left: 0px;
+    width: 100px;
+    box-shadow: 0px 0px 10px #eb68a2;
+    border-radius: 0px 30px 30px 0px;
+}
+a.tag:link {
+    color: #232323;
+    text-decoration: none;
+}
+a.tag:hover {
+    color: white;
+}
+hr {
+    visibility: hidden;
+    height: 2px;
+}
+
+div.wrapper {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url("images/background.jpg");
+    background-attachment: fixed;
+}
+div > div {
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    background-image: url("images/white.jpg");
+    border-radius: 30px;
+    width: 1000px;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px white;
+}
+div > p {
+    text-align: center;
+    padding: 20px;
+}
+a.intro {
+    display:block;
+    color: #eb68a2;
+    font-size: 55px;
+    font-family: Arial Black;
+    padding: 20px;
+    padding-top: 100px;
+    text-shadow: 0px 0px 4px #eb68a2;
+}
+a.title {
+    display:block;
+    color: white;
+    font-size: 50px;
+    font-family: Arial Black;
+    padding: 20px;
+    text-shadow: 0px 0px 4px white;
+}
+p.subtitle {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    text-shadow: 0px 0px 1px #323232;
+}
+
+img {
+    border-radius: 30px;
+}
+
+#hashtag {
+    display: block;
+    padding: 10px;
+}
+span {
+    display: inline-block;
+    padding: 10px;
+    color: lightslategray;
+    background-color: lightgray;
+    border-radius: 30px;
+    text-decoration: none;
+}
+span:hover {
+    color: #eb68a2;
+}
+
+p.getlink {
+    display: inline-block;
+    border-radius: 30px;
+}
+a.github {
+    border-radius: 30px;
+    padding: 10px;
+}
+a.github:link {
+    color: black;
+    text-decoration: none;
+}
+a.github:hover {
+    color:black;
+    background-color: #d3d3d3dc;
+    text-decoration: none;
+}
+
+p > label {
+    align-items: center;
+}
+
+p.etc {
+    color: white;
+    font-family: Arial Black;
+    text-align: center;
+    text-shadow: 0px 0px 3px white;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+<!--PLAY bar-->
+<div class="play">
+    <audio autoplay controls loop preload onloadstart="this.volume=0.5">
+        <source src="audio/kitsch.mp3" type="audio/mp3">
+    </audio>
+</div>
+<!--END of play bar-->
+
+<!--MENU bar-->
+<div class="menu">
+    <a class="tag" href="#home">HOME</a><br>
+    <hr>
+    <a class="tag" href="#mytime">MY TIME</a><br>
+    <hr>
+    <a class="tag" href="#fav">FAVORITE</a><br>
+    <hr>
+    <a class="tag" href="#idea">IDEA</a><br>
+    <hr>
+    <a class="tag" href="#mystyle">MY STYLE</a>
+</div>
+<!--END of menu bar-->
+    
+<div class="wrapper">
+    <!--INTRODUCTION bar-->
+    <a class="intro" id="home">- - - &nbsp;Let's find out what's my kitsch&nbsp; - - -</a>
+    
+    <br><br><br>
+    
+    <a class="title" id="mytime">⊹ it's MY TIME ⊹</a>
+    <div class="first">
+        <p class="subtitle">컴퓨터공학과 21학번 전주원</p>
+
+        <img src="images/mytime2.jpg" width="450px" height="600px">
+
+        <p>
+            안녕하세요 코딩천재가 되고 싶은 전주원입니다 🌞<br>
+            인천에서 나고 자란 인천 토박이이고, MBTI는 ISFJ입니다<br>
+            처음 만나면 낯을 가릴 수 있으나 마음은 열려있으니 언제든 다가와주세요 💃<br>
+            멋사 11기로 함께할 수 있어서 기쁩니다! 🦁💙
+        </p>
+
+        <p id="hashtag">
+            <span>#스물셋</span>
+            <span>#인천토박이</span>
+            <span>#ISFJ</span>
+            <span>#멋사11기_백엔드</span>
+        </p>
+    </div>
+
+    <br><br><br>
+
+    <a class="title" id="fav">⊹ my FAVORITE things ⊹</a>
+    <div class="second">
+        <p class="subtitle">RECORD</p>
+            <img src="images/record1.jpg" width="262px" height="350px">&nbsp;&nbsp;
+            <img src="images/record2.jpg" width="380px" height="350px">
+            <p id="hashtag">
+                <span>#아날로그러버</span>
+                <span>#DIY_다이어리</span>
+                <span>#어느새_6년차_블로거</span>
+            </p><br>
+        <p class="subtitle">PIANO</p>
+            <img src="images/piano2.jpg" width="622px" height="350px">
+            <p id="hashtag">
+                <span>#힐링타임</span>
+                <span>#최애곡은_변하지않는것</span>
+                <span>#지금은_sparkle_연습중</span>
+            </p><br>
+        <p class="subtitle">DIGGING</p>
+            <img src="images/digging1.jpg" width="585px" height="350px">&nbsp;&nbsp;
+            <img src="images/digging2.jpg" width="262px" height="350px">
+            <p id="hashtag">
+                <span>#하나만_죽어라_파는_사람_나야나</span>
+                <span>#노래도_음식도_질릴_때까지</span>
+                <span>#요거트딸기시리얼_먹짱조합</span>
+            </p><br>
+    </div>
+
+    <br><br><br>
+
+    <a class="title" id="idea">⊹ what a good IDEA ⊹</a>
+    <div class="third">
+        <p class="subtitle">1. "FOR PEOPLE"</p>
+        <p>헌혈, 해외봉사, 기부 등의 봉사활동을 간편하게 알아보고 신청할 수 있는 앱</p><br>
+
+        <p class="subtitle">2. "IN myP:Ocket"</p>
+        <p>여러 매장에서 주는 쿠폰, 스탬프들을 한데 모아서 볼 수 있는 앱</p>
+    </div>
+
+    <br><br><br>
+
+    <a class="title" id="mystyle">⊹ this is MY STYLE ⊹</a>
+    <div class="fourth">
+        <p class="getlink">
+            <a class="github" href="https://github.com/juwon0403">💾 GITHUB</a>
+        </p>
+    </div>
+     <!--END of introduction bar-->
+
+    <br><br><br><br><br><br>
+
+    <p class="etc">copyright &copy; JEON JUWON</p>
+
+    <br><br><br>
+</div>
+</body>
+</html>

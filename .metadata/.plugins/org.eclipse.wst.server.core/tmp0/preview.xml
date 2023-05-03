@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<server port="8080">
+  <module context="aboutme" name="aboutme" path="C:/Users/SAMSUNG/OneDrive/바탕 화면/멋쟁이 사자처럼/공통 Session 4 - 자기소개 사이트/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/aboutme" type="static"/>
+</server>
